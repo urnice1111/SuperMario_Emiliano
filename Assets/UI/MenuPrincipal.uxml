@@ -14,6 +14,13 @@
             </ui:VisualElement>
             <ui:Label text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages..." class="help-popup-text" style="font-size: 50px;"/>
         </ui:VisualElement>
+        <ui:VisualElement name="CreditsPopup" class="credits-popup hidden">
+            <ui:Button text="X" name="BtnCloseCredits" class="credits-close-button"/>
+            <ui:Label text="Créditos" class="credits-popup-title"/>
+            <ui:ScrollView name="CreditsScroll" class="credits-scroll">
+                <ui:Label name="CreditsContent" class="credits-scroll-text" text="Quisque pellentesque est varius pretium lacinia.&#10;Donec laoreet augue in imperdiet hendrerit.&#10;Ut aliquet purus quis rhoncus gravida.&#10;&#10;Vivamus venenatis nunc in posuere laoreet.&#10;Cras vel lectus a nibh blandit pretium at vel mi.&#10;Curabitur id ante ac dui faucibus convallis.&#10;Etiam ut elit ut nisl malesuada gravida.&#10;&#10;Pellentesque a mauris ac ex ultricies ornare.&#10;&#10;Maecenas laoreet lacus sit amet erat consectetur, et mattis leo aliquet.&#10;Aliquam fermentum lacus ultrices arcu cursus, vel eleifend dolor sagittis.&#10;&#10;Sed eget eros vitae nunc tincidunt fermentum.&#10;Fusce auctor justo a felis bibendum, in volutpat nulla facilisis.&#10;Proin sit amet sapien at libero consequat ultrices.&#10;&#10;Developed by&#10;Emiliano Garcia Ramos&#10;A01753803&#10;&#10;&#10;&#10;&#10;&#10;&#10;"/>
+            </ui:ScrollView>
+        </ui:VisualElement>
         <ui:VisualElement name="BottomBar" class="bottom-bar" style="justify-content: flex-end;">
             <ui:Label text="Emiliano Garcia Ramos A01753803" name="Credits" class="credits" style="font-size: 50px;"/>
         </ui:VisualElement>
