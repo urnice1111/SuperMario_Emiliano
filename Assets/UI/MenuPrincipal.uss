@@ -1,0 +1,86 @@
+.menu {
+    flex-grow: 1;
+    background-color: rgb(50, 50, 120);
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.titulo {
+    -unity-font-style: bold;
+    font-size: 70px;
+    -unity-text-align: upper-center;
+    color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.15);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.button-container {
+    background-color: rgba(100, 100, 180, 0.5);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin-left: 450px;
+    margin-right: 450px;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-button {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 150px;
+    padding-right: 150px;
+    font-size: 32px;
+    -unity-font-style: bold;
+    color: rgb(255, 255, 255);
+    background-color: rgb(230, 120, 50);
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+}
+
+.menu-button:hover {
+    background-color: rgb(245, 140, 70);
+    transition-duration: 0.2s;
+    scale: 1.2 1.2 1.2;
+    transition-property: all;
+    transition-timing-function: ease;
+}
+
+.menu-button:active {
+    background-color: rgb(200, 100, 30);
+}
+
+.bottom-bar {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 5px;
+}
+
+
+
+
+
+.credits {
+    font-size: 22px;
+    -unity-font-style: italic;
+    color: rgb(255, 255, 255);
+}

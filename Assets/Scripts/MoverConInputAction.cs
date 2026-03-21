@@ -14,7 +14,7 @@ public class MoverConInputAction : MonoBehaviour
 
     [SerializeField] private float XVelocity = 4f;
 
-    [SerializeField] private float YVelocity = 4f;
+    [SerializeField] private float YVelocity = 4.5f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
