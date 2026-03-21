@@ -23,6 +23,7 @@ public class Menu : MonoBehaviour
         menu = GetComponent<UIDocument>();
         var root = menu.rootVisualElement;
 
+        // get all UI elements by name
         botonJugar = root.Q<Button>("BtnJugar");
         botonAyuda = root.Q<Button>("BtnAyuda");
         botonCreditos = root.Q<Button>("BtnCreditos");
@@ -33,6 +34,7 @@ public class Menu : MonoBehaviour
         creditsPopup = root.Q<VisualElement>("CreditsPopup");
         creditsScroll = root.Q<ScrollView>("CreditsScroll");
 
+        // register click events
         botonJugar.RegisterCallback<ClickEvent>(AbrirJugar);
         botonAyuda.RegisterCallback<ClickEvent>(MostrarAyuda);
         botonCloseHelp.RegisterCallback<ClickEvent>(CerrarAyuda);
@@ -43,7 +45,7 @@ public class Menu : MonoBehaviour
     void Update()
     {
         if (!creditsScrolling) return;
-
+        // auto scroll credits like movie credits
         creditsScroll.scrollOffset += new Vector2(0, scrollSpeed * Time.deltaTime);
     }
 
@@ -52,6 +54,7 @@ public class Menu : MonoBehaviour
         SceneManager.LoadScene("SampleScene");
     }
 
+    // toggle visibility: hide buttons, show popup
     private void MostrarAyuda(ClickEvent evt)
     {
         buttonContainer.style.display = DisplayStyle.None;
@@ -68,6 +71,7 @@ public class Menu : MonoBehaviour
     {
         buttonContainer.style.display = DisplayStyle.None;
         creditsPopup.RemoveFromClassList("hidden");
+        // reset scroll to top
         creditsScroll.scrollOffset = Vector2.zero;
         creditsScrolling = true;
     }
