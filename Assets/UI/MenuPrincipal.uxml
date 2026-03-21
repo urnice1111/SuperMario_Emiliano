@@ -7,6 +7,13 @@
             <ui:Button text="Ayuda" name="BtnAyuda" class="menu-button"/>
             <ui:Button text="Créditos" name="BtnCreditos" class="menu-button"/>
         </ui:VisualElement>
+        <ui:VisualElement name="HelpPopup" class="help-popup hidden" style="-unity-text-align: upper-center; font-size: 80px; background-color: rgba(80, 80, 160, 0.43);">
+            <ui:VisualElement class="help-popup-header">
+                <ui:Label text="What is Lorem Ipsum?" class="help-popup-title"/>
+                <ui:Button text="X" name="BtnCloseHelp" class="help-close-button"/>
+            </ui:VisualElement>
+            <ui:Label text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages..." class="help-popup-text" style="font-size: 50px;"/>
+        </ui:VisualElement>
         <ui:VisualElement name="BottomBar" class="bottom-bar" style="justify-content: flex-end;">
             <ui:Label text="Emiliano Garcia Ramos A01753803" name="Credits" class="credits" style="font-size: 50px;"/>
         </ui:VisualElement>
