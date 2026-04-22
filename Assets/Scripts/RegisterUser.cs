@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Networking;
+using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 
 public class RegisterUser : MonoBehaviour
@@ -42,7 +43,7 @@ public class RegisterUser : MonoBehaviour
 
         string jsonBody = JsonUtility.ToJson(registerData);
 
-        using UnityWebRequest www = UnityWebRequest.Post("http://localhost:3000/register", jsonBody, "application/json");
+        using UnityWebRequest www = UnityWebRequest.Post("https://udqzin2siulhcshfje2amhkiey0pkadb.lambda-url.us-east-1.on.aws/register", jsonBody, "application/json");
         www.timeout = 5;
 
         
@@ -58,6 +59,7 @@ public class RegisterUser : MonoBehaviour
             resultMessage.style.opacity = 100;
             resultMessage.text = "¡Usuario creado exitosamente!";
             resultMessage.style.color = Color.green;
+            SceneManager.LoadScene("LogIn");
         } else
         {
             Debug.Log(www.responseCode);
